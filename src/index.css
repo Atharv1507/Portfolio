@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* ─── Theme: Arctic (default light blue) ─── */
+:root,
+:root[data-theme="arctic"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8faff;
+  --bg-tertiary: #eef3fb;
+
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+
+  --accent: #0e48e9;
+  --accent-glow: rgba(14, 72, 233, 0.2);
+  --accent-light: #dbeafe;
+
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+  --bulb-start: #dbeafe;
+  --bulb-end: rgba(255, 255, 255, 0);
+}
+
+/* ─── Theme: Obsidian (dark charcoal + electric violet) ─── */
+:root[data-theme="obsidian"] {
+  --bg-primary: #0d0d14;
+  --bg-secondary: #13131f;
+  --bg-tertiary: #1c1c2d;
+
+  --text-primary: #f1ece4;
+  --text-secondary: #a89880;
+  --text-muted: #5c5040;
+
+  --accent: #d08214;
+  --accent-glow: rgba(234, 88, 12, 0.3);
+  --accent-light: #3a1a07;
+
+  --border: #1e1a16;
+  --border-light: #2a231b;
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+
+  --bulb-start: #3a1a07;
+  --bulb-end: rgba(13, 13, 20, 0);
+}
+
+/* ─── Theme: Ember (warm cream + burnt orange) ─── */
+:root[data-theme="ember"] {
+  --bg-primary: #fdf8f0;
+  --bg-secondary: #faf3e7;
+  --bg-tertiary: #f5ead6;
+
+  --text-primary: #1c1207;
+  --text-secondary: #44392a;
+  --text-muted: #7c6a53;
+
+  --accent: #ea580c;
+  --accent-glow: rgba(234, 88, 12, 0.2);
+  --accent-light: #ffedd5;
+
+  --border: #e8d9c4;
+  --border-light: #f2e8d8;
+
+  --shadow-sm: 0 4px 6px -1px rgba(120, 60, 10, 0.06);
+  --shadow-md: 0 10px 15px -3px rgba(120, 60, 10, 0.10);
+  --shadow-lg: 0 20px 25px -5px rgba(120, 60, 10, 0.14);
+
+  --bulb-start: #ffedd5;
+  --bulb-end: rgba(253, 248, 240, 0);
+}
+
+/* ─── Theme: Forest (dark green + lime) ─── */
+:root[data-theme="forest"] {
+  --bg-primary: #0a110d;
+  --bg-secondary: #0f1a12;
+  --bg-tertiary: #162319;
+
+  --text-primary: #d1fae5;
+  --text-secondary: #6ee7b7;
+  --text-muted: #4b8c6b;
+
+  --accent: #22c55e;
+  --accent-glow: rgba(34, 197, 94, 0.2);
+  --accent-light: #052e16;
+
+  --border: #1a2e1e;
+  --border-light: #213a26;
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+
+  --bulb-start: #052e16;
+  --bulb-end: rgba(10, 17, 13, 0);
+}
+
+/* ─── Theme: Rose (light + pink/magenta) ─── */
+:root[data-theme="rose"] {
+  --bg-primary: #fff5f8;
+  --bg-secondary: #ffecf2;
+  --bg-tertiary: #ffe0eb;
+
+  --text-primary: #1e0a12;
+  --text-secondary: #6b2d47;
+  --text-muted: #9d5b74;
+
+  --accent: #e11d78;
+  --accent-glow: rgba(225, 29, 120, 0.2);
+  --accent-light: #fce7f3;
+
+  --border: #f4c5d8;
+  --border-light: #fde8f1;
+
+  --shadow-sm: 0 4px 6px -1px rgba(180, 20, 80, 0.06);
+  --shadow-md: 0 10px 15px -3px rgba(180, 20, 80, 0.10);
+  --shadow-lg: 0 20px 25px -5px rgba(180, 20, 80, 0.14);
+
+  --bulb-start: #fce7f3;
+  --bulb-end: rgba(255, 245, 248, 0);
+}
+
+/* ─── Shared tokens (theme-independent) ─── */
+:root {
+  --font-heading: 'Outfit', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --transition-fast: 0.15s ease-out;
+  --transition-normal: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-slow: 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  /* Fun custom cursor */
+  cursor: none;
+}
+
+/* Background Ellipse Bulb */
+.bulb-gradient {
+  position: fixed;
+  top: -20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  height: 60vh;
+  background: radial-gradient(ellipse at center, var(--bulb-start, var(--accent-light)) 0%, var(--bulb-end, rgba(255, 255, 255, 0)) 70%);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(80px);
+  transition: background 0.5s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+  border: 2px solid var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Typography Base */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: none;
+}
+
+button {
+  font-family: var(--font-heading);
+  cursor: none;
+  border: none;
+  background: none;
+}
+
+/* Section Margins */
+section {
+  padding: 70px 5vw;
+  position: relative;
+  z-index: 10;
+}
+
+/* General Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Smooth Bounce Animations */
+.fade-up-element {
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  transition: opacity 0.7s var(--transition-slow), transform 0.7s var(--transition-normal);
+}
+
+.fade-up-element.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Stagger delays */
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-200 {
+  transition-delay: 150ms;
+}
+
+.delay-300 {
+  transition-delay: 200ms;
+}
+
+.delay-400 {
+  transition-delay: 250ms;
+}
+
+/* Custom cursor specific override */
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  /* blend mode difference removed for light theme to look playful, using solid color */
+  transition: width 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+    height 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+    background-color 0.2s ease;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}

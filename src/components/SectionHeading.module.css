@@ -1,0 +1,21 @@
+.heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 3.5rem;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accentDot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--accent-glow);
+  flex-shrink: 0;
+}
