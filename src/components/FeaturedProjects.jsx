@@ -12,7 +12,7 @@ const projects = [
     desc: 'AI-powered bookmark management using Gemini API and Supabase. Automatically maps bookmarks to projects based on context.',
     year: '2026',
     image: '/knowledge-auditor.png',
-    link: '#',
+    link: 'https://knowledge-auditor.vercel.app',
     delay: ''
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     desc: 'A full-stack student marketplace with user auth, product listings, and a PostgreSQL backend schema.',
     year: '2026',
     image: '/marketpalce.png',
-    link: '#',
+    link: 'https://scaler-market.up.railway.app/',
     delay: 'delay-100'
   },
   {
