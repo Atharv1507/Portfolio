@@ -62,6 +62,7 @@ export function FeaturedProjects() {
               href={project.link}
               ref={ref}
               className={`fade-up-element ${project.delay} ${styles.card}`}
+              target='_blank'
             >
               <div className={styles.imageWrapper}>
                 {project.image && <img src={project.image} alt={project.title} className={styles.image} />}
