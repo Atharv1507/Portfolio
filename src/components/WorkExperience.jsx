@@ -15,14 +15,14 @@ const experiences = [
     role: "Development and Tech Mentor",
     company: "Cospire, Gurgaon",
     date: "Sep 2025 - Jan 2026",
-    desc: "Guided mentees in mastering full-stack concepts and structuring paths for new developers. Provided technical feedback on projects and code reviews.",
+    desc: "● Guided mentees in leveraging GenAI tools and establishing achievable development goals.\n● Defined a starting point and structured path for new and aspiring developers.\n● Provided constructive technical feedback on project presentations and code reviews to accelerate mentee growth",
     delay: "delay-100"
   },
   {
     role: "Frontend-Developer",
     company: "Bankim Creatives, New Delhi",
     date: "June 2025 - Nov 2025",
-    desc: "Developed and deployed a static responsive catalogue website. Troubleshooted complex front-end and CDN issues. Managed version control and deployments via GitHub.",
+    desc: "●Developed and deployed a static responsive catalogue website, ensuring mobile-first compatibility across all devices.\n●Troubleshooted complex issues across front-end, back-end and CDN.\n●Utilized Git for version control and Github for, maintaining high source code integrity and deployment with customdomain.",
     delay: "delay-200"
   }
 ];
@@ -49,7 +49,14 @@ export function WorkExperience() {
                 <div className={styles.card}>
                   <h4 className={styles.role}>{exp.role}</h4>
                   <div className={styles.company} data-date={exp.date}>{exp.company}</div>
-                  <p className={styles.desc}>{exp.desc}</p>
+                  <p className={styles.desc}>
+                    {exp.desc.split('\n').map((line, i, arr) => (
+                      <React.Fragment key={i}>
+                        {line}
+                        {i < arr.length - 1 && <br />}
+                      </React.Fragment>
+                    ))}
+                  </p>
                 </div>
               </div>
             </div>
