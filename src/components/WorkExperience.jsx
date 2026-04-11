@@ -5,11 +5,11 @@ import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const experiences = [
   {
-    role: "Freelance Full stack Developer",
-    company: "Bengaluru, India",
-    date: "Jan 2026 – Present",
-    desc: "Consulting with diverse clients to translate business requirements into functional, high-performance web solutions. Optimizing application architectures to enhance user experience.",
-    delay: ""
+    role: "Technical Programme Developer",
+    company: "NEXASSURE AI, New Delhi",
+    date: "Apr 2026 – Present",
+    desc: "● Architected AI-driven workflows utilizing Gemini API and OpenAI to automate internal research, reducing manual compliance processing time by over 40%.\n● Engineered Python-based web scrapers and extraction pipelines to automate data retrieval from legal portals, handling 1,000+ records with high accuracy and reliability.\n● Developed and deployed RESTful microservices using FastAPI, creating scalable automation tools and streamlining development",
+    delay: "delay-100"
   },
   {
     role: "Development and Tech Mentor",
@@ -23,7 +23,7 @@ const experiences = [
     company: "Bankim Creatives, New Delhi",
     date: "June 2025 - Nov 2025",
     desc: "●Developed and deployed a static responsive catalogue website, ensuring mobile-first compatibility across all devices.\n●Troubleshooted complex issues across front-end, back-end and CDN.\n●Utilized Git for version control and Github for, maintaining high source code integrity and deployment with customdomain.",
-    delay: "delay-200"
+    delay: "delay-100"
   }
 ];
 
