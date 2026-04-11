@@ -20,14 +20,14 @@ const skillCategories = [
   {
     title: 'Tools & Cloud',
     icon: <Database size={32} className={styles.icon} />,
-    skills: ['Git', 'GitHub', 'Vercel', 'Railway', 'Supabase', 'Selenium', 'Docker',],
+    skills: ['Git', 'GitHub', 'Vercel', 'Railway', 'Supabase', 'Docker',],
     delay: 'delay-200'
   },
   {
-    title: 'Data Science',
+    title: 'Data Science and AI',
 
     icon: <ChartPie size={32} className={styles.icon} />,
-    skills: ['Numpy', 'Pandas', 'Web Scraping', 'AI Agents', 'Pydantic'],
+    skills: ['Numpy', 'Pandas', 'Web Scraping', 'AI Agents', 'LangChain'],
     delay: 'delay-300'
   }
 ];
